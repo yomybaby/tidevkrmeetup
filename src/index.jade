@@ -1,0 +1,131 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    title Hello Ti
+
+    // build:css styles/styles.css
+    //- Check out 'src/bower_components/prism/themes/' for available themes
+    link(rel='stylesheet', type='text/css', href='bower_components/prism/themes/prism-tomorrow.css')
+    link(rel='stylesheet', type='text/css', href='styles/main.css')
+    link(rel='stylesheet', type='text/css', href='styles/ti.css')
+    // endbuild
+
+  // TODO : 조금 욕심 내기
+  // 적절한 font 찾기
+  // 코드가 잘보이도록 테마 변경 (열악한 프로젝터 환경도 상관없도록)
+  body
+    article#main-article
+      section(data-bespoke-state='reveal')
+        span.small_title 2014.02.24
+        img(src='tidev.png', class="big_badge")
+        h2 TiDev.kr 2월 정기모임
+        h3 Meetup In Seoul - 한국 타이타늄 사용자 모임
+        h5 환영합니다!
+
+      section(data-bespoke-state='reveal')
+        h2 시작하겠습니다!
+        h3 반갑습니다.
+
+      section(data-bespoke-state='reveal')
+        img(src='tidev.png', class="big_badge", width="400px", height="400px")
+        h2 TiDev.kr은..
+        p 한국 타이타늄사용자 모임으로 Javascript로
+          br
+          | 네이티브 크로스 플랫폼 앱을 만드는 타이타늄을
+          br
+          | 사용하는 개발자 모임입니다.
+        ul
+          li 포럼 :
+            a(href="http://tidev.kr", target="_blank") http://tidev.kr
+          li Facebook Group : 
+            a(href="http://tidev.kr/fb", target="_blank") http://tidev.kr/fb
+
+      section(data-bespoke-state='reveal')
+        img(src='tidev.png', class="big_badge", width="400px", height="400px")
+        h2 TiDev.kr Meetup in Seoul은..
+        p tidev.kr에서 주최하는 정기 모임입니다.
+          br
+          | 누구나 참석이 가능한 세미나 형태의 모임입니다.
+          br
+          | 발표도 누구나 가능하며 발표자에게는 기념품을 제공하고 있습니다.
+
+      section(data-bespoke-state='hello')
+        span.small_title 시작에 앞서..
+        h2 인사 나눠요~ 짧고, 굵게?!
+        ul 
+          li 이름
+          li 모임 참가 목적
+          li 타이타늄 경험 여부
+          li 만들고 있는 서비스 소개
+          li 하고 싶은 말 (무엇이든 OK!)
+
+
+      section(data-bespoke-state='emphatic')
+        h2 순서
+        ol.lecture_list
+          li 
+            strong 타이타늄 빠른 개발 시연
+            br
+            | - 이종은
+          li
+            a(href="http://dahinir.github.io/backbone.bespoke/ ",target="_blank")
+              strong backbone tip & trick
+            br
+            | - 신대현
+          li 
+            a(href="https://github.com/miconblog/Slide/blob/master/20140224/README.md",target="_blank")
+              strong backbone으로 restfull API 만들기
+            br
+            | - 손병대
+          li
+            strong backbone을 angluar.js 처럼
+            br
+            | - 김현동
+        p.small_font 위 제목을 클릭하면 해당 자료로 이동합니다.
+
+      section(data-bespoke-state='reveal')
+        h2 빠른 개발 필수 도구
+        hr
+        h2 
+          a(href="http://tishadow.yydigital.com", target="_blank") tishadow
+        p 
+          code.small ts express
+          br
+          code.small ti build -p ios --shadow
+          br
+          code.small ti build -p android --device-id "GENYMOTION_디바이스_네임" --shadow
+          p.small_font
+            | "GENYMOTION_디바이스_네임"은 
+            code.small ti info -t android
+            |를 통해서 확인 가능
+        hr
+        h2
+          a(href="http://genymotion.com", target="_blank") genymotion
+        code.small ti config genymotion.enabled true
+
+      section(data-bespoke-state="reveal")
+        <iframe width="560" height="315" src="//www.youtube.com/embed/yw8P64HqcZs" frameborder="0" allowfullscreen></iframe>
+
+      section(data-bespoke-state='success')
+        h2 Thanks
+        p 다음 모임에서 또 만나요
+      
+    // build:js scripts/scripts.js
+    script(src='bower_components/bespoke.js/dist/bespoke.min.js')
+    script(src='bower_components/bespoke-keys/dist/bespoke-keys.min.js')
+    script(src='bower_components/bespoke-touch/dist/bespoke-touch.min.js')
+    script(src='bower_components/bespoke-bullets/dist/bespoke-bullets.min.js')
+    script(src='bower_components/bespoke-scale/dist/bespoke-scale.min.js')
+    script(src='bower_components/bespoke-hash/dist/bespoke-hash.min.js')
+    script(src='bower_components/bespoke-progress/dist/bespoke-progress.min.js')
+    script(src='bower_components/bespoke-state/dist/bespoke-state.min.js')
+    script(src='bower_components/bespoke-forms/dist/bespoke-forms.min.js')
+    script(src='bower_components/bespoke-tishadow/dist/bespoke-tishadow.js')
+    script(src='bower_components/bespoke-run/dist/bespoke-run.js')
+    //- script(src='bower_components/bespoke-jumpy/dist/bespoke-jumpy.js')
+    //- script(src='bower_components/bespoke-dir/dist/bespoke-dir.js')
+    script(src='bower_components/prism/prism.js')
+    script(src='scripts/main.js')
+    // endbuild
