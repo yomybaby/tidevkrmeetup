@@ -93,7 +93,14 @@ pre.right {
   filter: grayscale(0.5) brightness(0.4);
   background-image: url("http://www.thedisabledcubicle.com/wp-content/uploads/2012/11/apollorockygif1.gif");
 }
+.success2 .background {
+  background-image: url("http://strongloop.com/wp-content/uploads/2014/04/thumbs_up_nph.gif");
+}
 .hello section {
+  background-color: transparent;
+  color: #fff;
+}
+.whatisthis section {
   background-color: transparent;
   color: #fff;
 }
@@ -123,6 +130,9 @@ pre.right {
 }
 .hello .background {
   background-image: url("http://stream1.gifsoup.com/view/405055/oh-hello-o.gif");
+}
+.whatisthis .background {
+  background-image: url("http://strongloop.com/wp-content/uploads/2014/04/giphy.gif");
 }
 p {
   margin-left: 0;
