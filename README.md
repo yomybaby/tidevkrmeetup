@@ -1,7 +1,9 @@
-# Hello Ti
+# tidev.kr 정기 모임 시작 발표자료
 > A [Bespoke.js](http://markdalgleish.com/projects/bespoke.js) presentation, built with [generator-bespoke](https://github.com/markdalgleish/generator-bespoke)
 
-## View slides locally
+## 바로 볼수 있는 github page 주소 : http://yomybaby.github.io/tidevkrmeetup/
+
+## 로컬에서 slide 보는 방법
 
 First, ensure you have the following installed:
 
